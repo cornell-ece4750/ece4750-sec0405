@@ -67,6 +67,12 @@ For waveform visualization, you may resort to either:
 1. GTKWave, which can be obtained [here](https://gtkwave.sourceforge.net/) and will open FST, VCD, and other formats.
 2. The Visual Studio Code + [Plug-in](https://marketplace.visualstudio.com/items?itemName=wavetrace.wavetrace) approach we suggested in Section 3, which also works locally.
 
+For the latter, note that the Makefile has been updated and there is no need to change anything.
+Just set the following environment variable before running anything:
+
+    % export VCD=1
+ 
+
 To generate coverage reports, you have to make sure lcov is installed:
 
     % sudo apt-get install lcov               # If on Linux with APT
